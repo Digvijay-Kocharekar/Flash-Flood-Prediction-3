@@ -8,7 +8,7 @@ import pickle
 edited_row_dataset = pd.read_csv("flood2_date - flood2_date.csv")
 
 app = Flask(__name__, template_folder="template")
-model = pickle.load(open("models\IFI_After_review2.pkl", "rb"))
+model = pickle.load(open("IFI_After_review2.pkl", "rb"))
 # print("Model Loaded")
 
 @app.route("/",methods=['GET'])
